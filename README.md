@@ -8,4 +8,8 @@ Fluct RTB Protobuf Sample
 * How to build?
     * Just `make` it
 * How to generate samples?
-    * run `./test.out` after a successful `make`
+    * Run `./test.out` after a successful `make`
+    * The following binary files will be generated:
+        * `fluct_site_bid_request_sample.bin`
+        * `fluct_app_bid_request_sample.bin`
+        * `fluct_bid_response_sample.bin`
