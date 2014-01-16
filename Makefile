@@ -31,6 +31,12 @@ test.o: test.cc ${PROTOHDRS}
 test.out: ${OBJECTS}
 	${CPP} ${OFLAGS} -o $@ $^
 
+checkbin: test.out
+	./test.out
+	cat fluct_site_bid_request_sample.bin | protoc --decode=FluctSiteBidRequest fluct_site_bid_request.proto
+	cat fluct_app_bid_request_sample.bin | protoc --decode=FluctAppBidRequest fluct_app_bid_request.proto
+	cat fluct_bid_response_sample.bin | protoc --decode=FluctBidResponse fluct_bid_response.proto
+
 clean:
 	rm -f *.bin
 	rm -f ${PROTOSRCS} ${PROTOHDRS} ${OBJECTS} ${TARGETS}

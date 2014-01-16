@@ -4,3 +4,4 @@
 *.bin
 *.pb.h
 *.pb.cc
+*.txt
