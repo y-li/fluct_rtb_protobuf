@@ -1,5 +1,5 @@
-Fluct Protobuf Sample
-=====================
+Fluct RTB Protobuf Sample
+=========================
 
 * This is a piece of code for generating Fluct RTB Protobuf samples
 * Please make sure you have the following things installed:
