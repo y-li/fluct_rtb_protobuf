@@ -124,7 +124,7 @@ generate_bid_response_sample(const std::string &filename)
 
     resp.SerializeToString(&outstring);
     if (not resp_parse.ParseFromString(outstring)) {
-        std::cerr << "ParseFromString(FluctAppBidRequest) Error!" << std::endl;
+        std::cerr << "ParseFromString(FluctBidResponse) Error!" << std::endl;
         return 1;
     }
     outfile << outstring;
