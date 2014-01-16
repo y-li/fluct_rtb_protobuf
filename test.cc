@@ -118,6 +118,9 @@ generate_bid_response_sample(const std::string &filename)
 
     resp.mutable_bid()->set_price(11.11);
     resp.mutable_bid()->set_adm("a test adm");
+    resp.mutable_bid()->set_adid("a test adid");
+    resp.mutable_bid()->set_adcat(1);
+    resp.mutable_bid()->set_adomain("www.example.com");
 
     FluctBidResponse            resp_parse;
     std::string                 outstring;
